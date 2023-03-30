@@ -1,0 +1,111 @@
+:root {
+    --dark-accent-color: #472183;
+    --header-background: #f1f6f5;
+    --light-accent-color: #82c3ec;
+    --icon-color: #4b56d2;
+    --text-color: #505050;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Darkest Pearl';
+    src: url('./Thedarkestpearl-9Ym8Z.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+    background-color: var(--header-background);
+    font-family: 'Darkest Pearl';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.store-name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    gap: 24px;
+    font-size: 2rem;
+}
+
+main {
+    background-color: var(--light-accent-color);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 16px;
+    gap: 16px;
+}
+
+.main-top, .main-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.main-top {
+    align-items: end;
+}
+
+.card, .card-long {
+    background-color: var(--header-background);
+    border-left: 4px solid var(--icon-color);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.card {    
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-long {
+    height: min-content;
+    width: 624px;
+}
+
+.main-image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonial {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-accent-color);
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+footer a {
+    color: var(--light-accent-color);
+}
