@@ -56,14 +56,20 @@ main {
     gap: 16px;
 }
 
-.main-top, .main-bottom {
-    display: flex;
+.main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2 auto);
+    grid-template-rows: repeat(2 auto);
     justify-content: center;
-    gap: 24px;
+    padding-top: 1rem;
 }
 
-.main-top {
-    align-items: center;
+.image-card {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.description {
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .card, .card-long {
@@ -88,6 +94,10 @@ main {
     width: 1224px;
 }
 
+.cardtext {
+    color: var(--text-color);
+}
+
 .main-image {
     width: 550px;
     height: auto;
@@ -96,6 +106,7 @@ main {
 
 .testimonial {
     font-style: italic;
+    grid-area: 2 / 1 / 3 / 3;
 }
 
 footer {
