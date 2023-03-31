@@ -27,8 +27,9 @@ body {
 }
 
 header {
-    background-color: var(--header-background);
+    background-color: var(--dark-accent-color);
     font-family: 'Darkest Pearl';
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +51,7 @@ header {
 main {
     background-color: var(--light-accent-color);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     padding: 16px;
     gap: 16px;
 }
@@ -62,20 +63,21 @@ main {
 }
 
 .main-top {
-    align-items: end;
+    align-items: center;
 }
 
 .card, .card-long {
     background-color: var(--header-background);
-    border-left: 4px solid var(--icon-color);
+    border-left: 8px solid var(--icon-color);
     border-radius: 8px;
-    padding: 8px;
+    padding: 16px;
     box-shadow: 2px 2px 2px gray;
+    font-size: 2rem;
 }
 
 .card {    
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,11 +85,11 @@ main {
 
 .card-long {
     height: min-content;
-    width: 624px;
+    width: 1224px;
 }
 
 .main-image {
-    width: 250px;
+    width: 550px;
     height: auto;
     border-radius: 8px;
 }
