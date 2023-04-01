@@ -1,5 +1,7 @@
 import './style.css';
 import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 function header() {    
     // Create initial header
@@ -22,8 +24,9 @@ function header() {
         const item = document.createElement('div');
         item.classList.add('navitem');
         item.innerText = navItem;
+        item.setAttribute('id', `${navItem}`);
         navBar.appendChild(item);        
-    })    
+    })
 
     return element;
 }
@@ -55,6 +58,9 @@ function footer() {
 
 const content = document.getElementById('content');
 content.appendChild(header());
+document.getElementById('Home').addEventListener('click', loadHome);
+document.getElementById('Menu').addEventListener('click', loadMenu);
+document.getElementById('Contact').addEventListener('click', loadContact);
 content.appendChild(main());
 loadHome();
 content.appendChild(footer());

@@ -1,7 +1,6 @@
 function home() {
     // Create initial main
-    const element = document.createElement('main');
-    element.setAttribute('id', 'main');
+    const element = document.getElementById('main');    
 
     // Create top section
     const mainWrapper = document.createElement('div');
@@ -50,7 +49,7 @@ function home() {
 function loadHome() {    
     const main = document.getElementById('main');
     main.textContent = '';
-    main.appendChild(home());
+    home();
 }
 
 export default loadHome;
