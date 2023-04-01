@@ -36,8 +36,12 @@ function home() {
     testCard.classList.add('card-long', 'testimonial');
     const testimonial = document.createElement('div');
     testimonial.classList.add('cardtext');
-    testimonial.innerText = '"I\'ve tried all of the cookies. I really think I can taste the difference between them." -- Totally Real Customer';
+    testimonial.innerText = '"I\'ve tried all of the cookies. I really think I can taste the difference between them."';
     testCard.appendChild(testimonial);
+    const author = document.createElement('div');
+    author.classList.add('cardtext', 'author');
+    author.innerText = '-- Totally Real Customer';
+    testCard.appendChild(author);
     mainWrapper.appendChild(testCard);
 
     // Append sections to main
