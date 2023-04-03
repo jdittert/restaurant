@@ -160,6 +160,11 @@ main {
     margin-bottom: .25rem;
 }
 
+.hours, .address,
+.phone, .email {
+    color: var(--text-color);
+}
+
 .email {
     font-style: italic;
 }
