@@ -8,7 +8,7 @@ function home() {
     
     // Card with cookie
     const mainImage = document.createElement('div');
-    mainImage.classList.add('card', 'image-card');
+    mainImage.classList.add('card', 'image-card', 'main-card');
     const cookieImage = document.createElement('img');
     cookieImage.src = 'swindle-cookie.jpg';
     cookieImage.classList.add('main-image');
@@ -18,7 +18,7 @@ function home() {
 
     // Card with description
     const description = document.createElement('div');
-    description.classList.add('card', 'description');
+    description.classList.add('card', 'description', 'main-card');
     const descText = document.createElement('div');
     descText.classList.add('cardtext');
     const descTop = document.createElement('p');

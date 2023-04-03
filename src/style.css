@@ -100,9 +100,12 @@ main {
     font-size: 2rem;
 }
 
-.card {    
+.card {
     height: 400px;
     width: 600px;
+}
+
+.main-card {  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +147,21 @@ main {
 .item-description {
     font-style: italic;
     color: var(--text-color);
+}
+
+.contact-card {
+    display: grid;
+    justify-content: start;
+    align-items: center; 
+}
+
+.location {
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.email {
+    font-style: italic;
 }
 
 footer {
